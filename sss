@@ -1,0 +1,26 @@
+<html>
+<head>
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+  var length = 3;
+  function fa(){
+  	  alert(this.length);
+  }
+
+
+  var obj = {
+  	   length: 2 ,
+  	   do :function(fn){
+  	   	      fn();
+  	   	      arguments[0]();
+  	   }
+  }
+
+  obj.do(fa);
+</script>
+
+</body>
